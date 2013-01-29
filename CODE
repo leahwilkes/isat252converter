@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+		<title>
+			MPG to KPL Converter
+		</title>
+			<h3>MPG to KPL Converter</h3>
+	</head>
+	<body>
+		<p>
+			<ol>
+				<li>Type MPG or KPL you want converted into respective box.</li>
+				<li>Press convert!</li>
+			</ol>
+		</p>
+		<div>
+		
+		</div>
+		<form>
+			<b>MPG:</b> <input type="number" name="MPG"><br>
+			<b>KPL:</b> <input type="number" name="KPL">
+		</form>
+	</body>
+	
+</html>
