@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+		<title>
+			MPG to KPL Converter
+		</title>
+			<h3 style="text-align: center; font-family: Verdana; color: purple; background-color: #33FF99">MPG to KPL Converter</h3>
+	</head>
+	<body style="text-align: center; font-family: Verdana">
+		<p>
+        	<ul>
+				<li>1. Type MPG or KPL you want converted into respective box.</li>
+				<li>2. Press convert!</li>
+            </ul>
+		</p>
+		
+		<form>
+			<p>
+				<label for="amount">Amount:</label>
+				<input type="text" id="amount" value="">
+				<select id="select">
+					<option value="MPG to KPL">MPG to KPL</option>
+					<option value="KPL to MPG">KPL to MPG</option>
+				</select>
+				<input type="text" id="convertedValue" value="">
+			</p>
+			<p>
+				<input type="button" value="Convert" onclick="convert();">
+				<input type="reset" value="Reset">
+		</form>
+		
+	<script type="text/javascript">
+		function convert() {
+			var amount = parseFloat(document.getElementById("amount").value);
+			var select = document.getElementById("select");
+			var result = document.getElementById("convertedValue");
+			
+			if (select.value === "MPG to KPL") {
+				result.value = (amount * .425144).toFixed(3);
+			}
+			
+			if (select.value === "KPL to MPG") {
+				result.value = (amount / .425144).toFixed(3);
+			} 
+		}
+	</script>	
+	</body>
+	
+</html>
